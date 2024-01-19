@@ -1,11 +1,10 @@
 #include <iostream>
-#include <cmath>
 
 double ballHeight(double height, double seconds)
 {
     double newHeight{};
     double gravity{ 9.8 };
-    newHeight = height - (0.5 * gravity * pow(seconds, 2.0));
+    newHeight = height - (0.5 * gravity * (seconds * seconds));
     return newHeight;
 }
 
@@ -14,19 +13,21 @@ int main()
     std::cout << "Enter the height of the tower in meters: ";
     double height{};
     std::cin >> height;
-    //double seconds{};
+    int seconds{0};
 
-    
-    if (ballHeight(100.0, 1.0) > 0)
-        std::cout << "At 1 seconds, the ball is at height: " << ballHeight(100.0, 1.0) << " meters\n";
-        std::cout << "At 2 seconds, the ball is at height: " << ballHeight(100.0, 2.0) << " meters\n";
-        std::cout << "At 3 seconds, the ball is at height: " << ballHeight(100.0, 3.0) << " meters\n";
-        std::cout << "At 4 seconds, the ball is at height: " << ballHeight(100.0, 4.0) << " meters\n";
-        std::cout << "At 5 seconds, the ball is at height: " << ballHeight(100.0, 5.0) << " meters\n";
- /*   else
-        std::cout << "At 1 seconds, the ball is ";
-        std::cout << "on the ground.";*/
+    double newHeight = { ballHeight(height, seconds) };
+
+    while (newHeight > 0)
+    {
+        std::cout << "At " << seconds << " seconds, the ball is at height : " << newHeight << " meters\n";
+        seconds++;
+        newHeight = ballHeight(height, static_cast<double>(seconds)); 
+        // static_cast not needed above, but left
+        // the ballHeight() is expecting a double value for seconds, and we pass in an integer argument. 
+        // The compiler will notice the mismatch and implicitly convert the integer to a double.
+    }
+    std::cout << "At " << seconds << " seconds, the ball is ";
+    std::cout << "on the ground.\n";
 
     return 0;
 }
-
