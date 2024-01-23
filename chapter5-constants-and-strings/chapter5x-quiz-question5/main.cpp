@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string> // For std::string and std::getline
+#include <string_view>
 
 std::string getName(int x)
 {
@@ -9,7 +10,7 @@ std::string getName(int x)
     return person;
 }
 
-int getAge(std::string name)
+int getAge(std::string_view name) // string_view saves a new copy of name
 {
     std::cout << "Enter the age of " << name << ": ";
     int age{};
@@ -17,38 +18,25 @@ int getAge(std::string name)
     return age;
 }
 
+void printOlder(std::string_view name1, int name1Age, std::string_view name2, int name2Age)
+{
+    if (name1Age > name2Age)
+        std::cout << name1 << " (age " << name1Age << ") is older than " << name2 << " (age " << name2Age << ").\n";
+    else
+        std::cout << name2 << " (age " << name2Age << ") is older than " << name1 << " (age " << name1Age << ").\n";
+}
+
 int main()
 {
-    std::string person1 (getName(1));
+    const std::string person1 (getName(1));
 
-    int person1Age{ getAge(person1)};
+    const int person1Age{ getAge(person1)};
 
-    person1.append(" (age " + std::to_string(person1Age));
+    const std::string person2(getName(2));
 
-    std::string person2(getName(2));
+    const int person2Age{ getAge(person2) };
 
-    int person2Age{ getAge(person2) };
-
-    person2.append(" (age " + std::to_string(person2Age));
-
-    std::string oldest{};
-    std::string youngest{};
-
-    if (person1Age > person2Age)
-    {
-        oldest = person1;
-        youngest = person2;
-    }
-    else
-    {
-        oldest = person2;
-        youngest = person1;
-    }
-    
-    std::cout << oldest 
-          << ") is older than " 
-          << youngest 
-          << ").\n";
+    printOlder(person1, person1Age, person2, person2Age);
 
     return 0;
 }
