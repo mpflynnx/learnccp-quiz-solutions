@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string_view>
 
 constexpr std::string_view getQuantityPhrase(int x)
 {
@@ -21,7 +22,7 @@ constexpr std::string_view getQuantityPhrase(int x)
 
 }
 
-std::string getApplesPluralized(int x)
+constexpr std::string_view getApplesPluralized(int x)
 {
     return (x == 1 ? "apple" : "apples");
 }
