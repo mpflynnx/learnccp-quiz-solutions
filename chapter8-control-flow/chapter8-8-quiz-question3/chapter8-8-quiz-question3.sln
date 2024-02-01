@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter8-8-quiz-question3",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFAA924E-A21C-4CBC-A992-F1126B9AF977}"
 	ProjectSection(SolutionItems) = preProject
+		instructors-solution.md = instructors-solution.md
 		question.md = question.md
 	EndProjectSection
 EndProject
