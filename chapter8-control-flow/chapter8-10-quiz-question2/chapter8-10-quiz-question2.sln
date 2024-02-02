@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter8-10-quiz-question2", "chapter8-10-quiz-question2.vcxproj", "{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E95E8AE-7EB5-4B8C-AEA2-A1121529BFB5}"
+	ProjectSection(SolutionItems) = preProject
+		question2.md = question2.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Debug|x64.ActiveCfg = Debug|x64
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Debug|x64.Build.0 = Debug|x64
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Debug|x86.Build.0 = Debug|Win32
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Release|x64.ActiveCfg = Release|x64
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Release|x64.Build.0 = Release|x64
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Release|x86.ActiveCfg = Release|Win32
+		{EDEDCA9B-4105-4AFE-961D-EAEE2A8E2D5D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED229DD1-C9FB-4944-B1AA-04E7F4F1A4D1}
+	EndGlobalSection
+EndGlobal

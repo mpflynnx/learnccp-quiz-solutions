@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter8-8-quiz-question3", "chapter8-8-quiz-question3.vcxproj", "{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFAA924E-A21C-4CBC-A992-F1126B9AF977}"
+	ProjectSection(SolutionItems) = preProject
+		instructors-solution.md = instructors-solution.md
+		question.md = question.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Debug|x64.ActiveCfg = Debug|x64
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Debug|x64.Build.0 = Debug|x64
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Debug|x86.ActiveCfg = Debug|Win32
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Debug|x86.Build.0 = Debug|Win32
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Release|x64.ActiveCfg = Release|x64
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Release|x64.Build.0 = Release|x64
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Release|x86.ActiveCfg = Release|Win32
+		{D19C1A55-1500-4B0C-9087-80FFF7FF9EEA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA9FD247-3DC1-4DA8-8803-E2D3D9ADC3B5}
+	EndGlobalSection
+EndGlobal
