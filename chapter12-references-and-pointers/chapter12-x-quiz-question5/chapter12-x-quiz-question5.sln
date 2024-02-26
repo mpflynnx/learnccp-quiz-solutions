@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter12-x-quiz-question5", "chapter12-x-quiz-question5.vcxproj", "{AFFE0D73-078B-4880-BD2C-36646D73E480}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{10695837-CC4C-40F4-9ABF-0F6285F3740B}"
+	ProjectSection(SolutionItems) = preProject
+		question.md = question.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
