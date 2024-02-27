@@ -1,5 +1,7 @@
 ## Question #1
 
+- [19.2 - Dynamically allocating arrays](https://www.learncpp.com/cpp-tutorial/dynamically-allocating-arrays/)
+
 Write a program that:
 
 Asks the user how many names they wish to enter.
@@ -7,7 +9,7 @@ Dynamically allocates a `std::string` array.
 Asks the user to enter each name.
 Calls `std::sort` to sort the names (See [18.1 -- Sorting an array using selection sort](https://www.learncpp.com/cpp-tutorial/sorting-an-array-using-selection-sort/#stdsort) and [17.9 -- Pointer arithmetic and subscripting](https://www.learncpp.com/cpp-tutorial/pointer-arithmetic-and-subscripting/))
 Prints the sorted list of names.
-`std::string` supports comparing strings via the comparison operators < and >. You don’t need to implement string comparison by hand.
+`std::string` supports comparing strings via the comparison operators < and >. You don't need to implement string comparison by hand.
 
 Your output should match this:
 
