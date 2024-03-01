@@ -9,3 +9,5 @@ You are running a website, and you are trying to calculate your advertising reve
 - The average earnings per clicked ad.
 
 Store those 3 values in a struct. Pass that struct to another function that prints each of the values. The print function should also print how much you made for that day (multiply the 3 fields together).
+
+Hint: If you store the percentage as an integer, you’ll also need to divide by 100 when you calculate how much you made for the day.
