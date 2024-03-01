@@ -16,7 +16,9 @@ Fraction getFraction() {
     std::cin >> temp.numerator;
     std::cout << "Enter a value for the denominator: ";
     std::cin >> temp.denominator;
-
+    // temp is a local variable, it will go out of scope at the end of the function
+    // If we were to return temp as reference, we’d return a dangling reference 
+    // back to the caller.
     return temp;
 }
 
